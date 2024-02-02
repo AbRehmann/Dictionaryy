@@ -1,11 +1,19 @@
 import "./App.css";
-import { Button } from "@material-tailwind/react";
+import Sidebar from "./Components/Slider";
+import Body from "./Components/Body";
 
 function App() {
   return (
     <div className="App">
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-      <Button>Button</Button>
+      <div className="sidebr">
+        <Sidebar />
+      </div>
+      <div
+        id="change"
+        className="w-full  lg:min-w-980  md:w-3/4 lg:w-3/4 xl:w-3/4 float-right p-20 md:p-20 relative box-border overflow-hidden"
+      >
+        <Body />
+      </div>
     </div>
   );
 }
