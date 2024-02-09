@@ -10,7 +10,7 @@ function App() {
       </div>
       <div
         id="change"
-        className="w-full  lg:min-w-980  md:w-3/4 lg:w-3/4 xl:w-3/4 float-right p-20 md:p-20 relative box-border overflow-hidden"
+        className="w-full   lg:min-w-980  md:w-3/4 lg:w-3/4 xl:w-3/4 float-right p-7 md:p-7 relative box-border overflow-hidden"
       >
         <Body />
       </div>

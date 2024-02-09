@@ -2,9 +2,33 @@
   display: flex;
 }
 
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 1171px) {
   #change {
     background-color: rgb(255, 255, 255);
-    width: 99%;
+    width: 100%;
   }
+
+  #slider {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #change {
+    background-color: rgb(255, 255, 255);
+
+    margin: 0px;
+  }
+}
+.swiper-button-next,
+.swiper-button-prev {
+  top: "50%";
+  transform: translateY(-50%);
+}
+
+.swiper-button-next {
+  right: 10px; /* Adjust the distance from the right edge */
+}
+
+.swiper-button-prev {
+  left: 10px; /* Adjust the distance from the left edge */
 }
