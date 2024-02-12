@@ -64,8 +64,7 @@ const LocationPopup = () => {
       {/* For example: */}
       {permission === null && (
         <div>
-          <p>Please allow access to your location.</p>
-          <button onClick={askForPermission}>Allow this time</button>
+          <button onClick={askForPermission}></button>
           {/* Add an option for 'Allow in every visit' if needed */}
         </div>
       )}
