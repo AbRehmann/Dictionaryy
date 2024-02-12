@@ -28,7 +28,7 @@ function Blog() {
               </p>
               <a
                 href="edc"
-                className="inline-block mb-6 mt-16 ml-16 w-max px-4 py-2 text-sm font-medium text-white bg-blue-800 border border-blue-600 rounded-lg hover:bg-white hover:text-blue-400"
+                className="inline-block mb-6 mt-16  text-center px-4 py-2 text-sm font-medium text-white bg-blue-800 border border-blue-600 rounded-lg hover:bg-white hover:text-blue-400"
               >
                 See All
               </a>
