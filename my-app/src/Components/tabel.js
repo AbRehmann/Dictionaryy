@@ -10,9 +10,11 @@ import "swiper/css/scrollbar";
 
 function Tabel() {
   return (
-    <div className="mt-5">
+    <div className="mt-12">
       <div>
-        <h1 className=" mb-4 font-semibold  text-3xl  ">Singular and Plural</h1>
+        <h1 className="  mb-4 font-semibold  text-3xl  ">
+          Singular and Plural
+        </h1>
       </div>
 
       <Swiper
@@ -45,7 +47,7 @@ function Tabel() {
         <SwiperSlide>
           <div className=" w-full max-w-sm mx-auto bg-blue-50 flex  justify-center rounded-xl shadow-md overflow-hidden md:max-w-2xl">
             <div className="md:flex">
-              <div className="p-6">
+              <div className="p-5">
                 <div className="flex justify-between ">
                   <div className=" mb-5 ml-5 border border-gray-400 rounded px-3 py-2 text-gray-500  tracking-wide  text-xs font-semibold">
                     Singular
@@ -83,7 +85,7 @@ function Tabel() {
           {" "}
           <div className=" w-full max-w-sm mx-auto bg-blue-50 flex  justify-center rounded-xl shadow-md overflow-hidden md:max-w-2xl">
             <div className="md:flex">
-              <div className="p-6">
+              <div className="p-5">
                 <div className="flex justify-between ">
                   <div className=" mb-5 ml-5 border border-gray-400 rounded px-3 py-2 text-gray-500  tracking-wide  text-xs font-semibold">
                     Singular
@@ -121,7 +123,7 @@ function Tabel() {
           {" "}
           <div className=" w-full max-w-sm mx-auto bg-blue-50 flex  justify-center rounded-xl shadow-md overflow-hidden md:max-w-2xl">
             <div className="md:flex">
-              <div className="p-6">
+              <div className="p-5">
                 <div className="flex justify-between ">
                   <div className=" mb-5 ml-5 border border-gray-400 rounded px-3 py-2 text-gray-500  tracking-wide  text-xs font-semibold">
                     Singular

@@ -5,7 +5,7 @@ const Sidebar = () => {
   return (
     <div
       id="slider"
-      className="fixed top-15 left-0    h-screen w-80 bg-white-800 text-black overflow-auto"
+      className="fixed top-15 left-0  h-screen w-80 bg-white text-black overflow-auto"
     >
       <h2 className="text-xl p-4">Top searched</h2>
       <ul>
