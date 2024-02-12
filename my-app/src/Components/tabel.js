@@ -158,6 +158,13 @@ function Tabel() {
           </div>
         </SwiperSlide>
       </Swiper>
+
+      <style jsx>{`
+        .swiper-pagination {
+          display: flex !important;
+          justify-content: center;
+        }
+      `}</style>
     </div>
   );
 }

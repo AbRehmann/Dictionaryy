@@ -21,7 +21,9 @@ export default () => {
           spaceBetween={50}
           slidesPerView={4}
           navigation
-          pagination={{ clickable: true }}
+          pagination={{
+            clickable: true,
+          }}
           onSwiper={(swiper) => console.log(swiper)}
           onSlideChange={() => console.log("slide change")}
           breakpoints={{
@@ -188,6 +190,13 @@ export default () => {
             </div>
           </SwiperSlide>
         </Swiper>
+
+        <style jsx>{`
+          .swiper-pagination {
+            display: flex !important;
+            justify-content: center;
+          }
+        `}</style>
       </div>
     </>
   );
