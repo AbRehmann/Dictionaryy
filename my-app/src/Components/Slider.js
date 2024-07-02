@@ -4,31 +4,43 @@ import "tailwindcss/tailwind.css";
 const Sidebar = () => {
   const [names, setNames] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchNames = async () => {
       try {
         const response = await fetch(
-          "https://jsonplaceholder.typicode.com/users"
+          "https://jsonplaceholder.typicode.com/posts"
         );
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }
         const data = await response.json();
-        const extractedNames = data.map((user) => user.name);
+        const extractedNames = data.map((post) => post.title);
         setNames(extractedNames);
         setLoading(false);
       } catch (error) {
         console.error("Error fetching data:", error);
+        setError("Error fetching data. Please try again later.");
         setLoading(false);
       }
     };
-
     fetchNames();
   }, []);
 
+  console.log("names:", names);
+
   if (loading) {
     return <div>Loading...</div>;
+  }
+
+  if (error) {
+    return <div>{error}</div>;
+  }
+
+  if (!Array.isArray(names)) {
+    console.error("Expected names to be an array, but got:", names);
+    return <div>Unexpected error occurred. Please try again later.</div>;
   }
 
   return (
@@ -36,12 +48,12 @@ const Sidebar = () => {
       id="slider"
       className="fixed top-15 left-0 h-screen w-80 bg-white text-black overflow-y-auto"
     >
-      <h2 className="text-xl p-4">Top searched</h2>
+      <h2 className="text-xl p-4">Top Posts</h2>
       <ul>
         {names.map((name, index) => (
           <li
             key={index}
-            className="p-4 m-5 bg-white text-black border rounded-lg mb-4 flex items-center hover:bg-blue-50 cursor-pointer"
+            className="p-4 m-5 bg-white text-black  rounded-lg mb-4 flex items-center hover:bg-blue-50 cursor-pointer"
           >
             <div className="flex-1">
               <h3 className="text-base font-bold">{name}</h3>

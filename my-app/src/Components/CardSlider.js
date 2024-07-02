@@ -1,7 +1,5 @@
 // /* eslint-disable import/no-anonymous-default-export */
 
-import React, { useState, useEffect } from "react";
-
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -11,7 +9,6 @@ import "swiper/css/scrollbar";
 import { Typography } from "@material-tailwind/react";
 
 function CardSlider() {
-  // Dummy data for Urdu words
   const wordsData = [
     { id: 16, word: "دوست", meaning: "Friend" },
     { id: 17, word: "خواب", meaning: "Dream" },
